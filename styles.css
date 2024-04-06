@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;        
+}
+
+nav{
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    size: 19px;
+    transition:  .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover{
+    color: red;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+#banner{
+    background-image: url('https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/97e9f5fa6e50c185d249956c6f198a2652a9217e69a59ecd.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    display: flex;
+}
+#banner p {
+    margin-top: 200px;
+    margin-left: 100px;
+    background-color: transparent; /* Removendo o fundo preto */
+}
+
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer{
+    width: 55%;
+}
+
+#sinopse{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;   
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.actor-cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px; 
+    color: white;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.banner1{
+    background-image: url('https://i.pinimg.com/736x/92/38/7f/92387f30a9ac5e2b4293e158545eeca9.jpg');
+}
+.banner2{
+    background-image: url('https://cdn.vox-cdn.com/thumbor/KlN4gVpuzB_bhJ30qbuEO_i7qw8=/0x0:1920x1280/1200x800/filters:focal(843x276:1149x582)/cdn.vox-cdn.com/uploads/chorus_image/image/72785439/spider_man_2_miles_jacket_1920.0.jpg');
+}
+.banner3{
+    background-image: url('https://i.pinimg.com/736x/78/66/e4/7866e46d7adc35f801ad2dab11c9447f.jpg');
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner1:hover{
+    background-image: url('https://preview.redd.it/x41w7htvmqm71.jpg?width=640&crop=smart&auto=webp&s=f7bad19652a744c51abc9b96656f67820cd1ef0e');
+    background-position: 60% 60%;
+}
+
+.banner2:hover{
+    background-image: url('https://www.25best.com.br/wp-content/uploads/2023/11/Spider-man-2-game-2-e1702297177650.png');
+    background-position: 60% 60%;
+}
+
+.banner3:hover{
+    background-image: url('https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2023/07/21/marvels-spiderman-2-venom-1jezcp62o32nt.jpg');
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color:#fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 55%;
+        font-size:  15px;
+        display: flex;
+    }
+
+    #banner p {
+        justify-content: center;
+        margin-top: 150%;
+        background-color: transparent;
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
